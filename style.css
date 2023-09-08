@@ -84,13 +84,14 @@ input {
 }
 
 .formcontainer {
+    background-color: rgba(128, 128, 128, 0.356);
     position: absolute;
     top: 10%;
     width: 80vw;
     height: fit-content;
     padding: 40px 15px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px gray;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 
 #form {

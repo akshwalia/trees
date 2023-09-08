@@ -75,8 +75,9 @@ function handleSubmit(e) {
             document.querySelector('.content').style.display = 'block';
 
             document.querySelector('.place').innerHTML = `Place: ${info.place}`;
-            document.querySelector('.totaltrees').innerHTML = `Total Number of Trees: ${info.totalTrees}`;
-            document.querySelector('.treescutpermission').innerHTML = `Number of trees cut with permission: ${noOfTrees.value}`;
+            document.querySelector('.totaltrees').innerHTML = `Total number of Trees: ${info.totalTrees}`;
+            document.querySelector('.totaltreescut').innerHTML = `Total number of trees cut: ${info.treesCut}`;
+            document.querySelector('.treescutpermission').innerHTML = `Number of trees supposed to be cut by authorities: ${noOfTrees.value}`;
             document.querySelector('.treescutwithoutpermission').innerHTML = `Number of trees cut without permission: ${info.treesCut-noOfTrees.value<0?0:info.treesCut-noOfTrees.value}`;
         }
     })
