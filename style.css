@@ -11,11 +11,19 @@ body {
 }
 
 header {
-    color: rgb(209, 210, 211);
+    color: rgb(255, 255, 255);
     padding: 40px;
     text-align: center;
+}
+
+.heading {
     font-size: 50px;
     font-family:'Overpass',monospace;
+}
+
+.tagline {
+    font-size: 21px;
+    letter-spacing: 4px;
 }
 
 .cards {
@@ -73,7 +81,7 @@ header {
 
 button {
     width: 100px;
-    background-color: rgb(16, 70, 133);
+    background-color: rgb(15, 121, 63);
     border: none;
     font-size: 17px;
     border-radius: 5px;
@@ -84,7 +92,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(12, 52, 97);
+    background-color: rgb(12, 95, 67);
 }
 
 input {

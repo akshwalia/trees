@@ -53,7 +53,7 @@ const data = {
 function handleLogin(e) {
     e.preventDefault();
 
-    if (username.value === 'aksh' && password.value === 'aksh') {
+    if (username.value === 'official@gov.in' && password.value === 'official123') {
         document.querySelector('.error').style.opacity = '0';
         setTimeout(() => {
             document.querySelector('.overlay').style.display = 'none';
