@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Overpass:wght@700&family=Raleway:ital,wght@0,400;1,700&family=Roboto&display=swap');
+
 body {
     margin: 0;
     background-image: url(background.jpg);
@@ -5,16 +7,44 @@ body {
     background-size: cover;
     min-height: 100vh;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    
+    color: rgb(209, 210, 211);
     padding: 40px;
     text-align: center;
-    font-size: 40px;
-    font-family:monospace;
+    font-size: 50px;
+    font-family:'Overpass',monospace;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.card {
+    padding: 15px;
+    
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.number {
+    font-size: 40px;
+    font-family: 'Raleway', monospace;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 20px;
+    font-family: 'Raleway', monospace;
+    font-weight: bold;
+}
 .overlay {
     position: relative;
     min-height: 70vh;

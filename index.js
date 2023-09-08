@@ -49,6 +49,7 @@ const data = {
 
     ]
 };
+
 function handleLogin(e) {
     e.preventDefault();
 
@@ -84,11 +85,59 @@ function handleSubmit(e) {
 }
 
 
+function countUpOne(from, to) {
+    let counter = setInterval(() => {
+        from+=5;
+        document.querySelector(`.card.one .number`).innerHTML = from;
+
+
+        if(from>=to) {
+            clearInterval(counter);
+            document.querySelector('.card.one .number').innerHTML = to;
+        }
+    },10)
+}
+
+function countUpTwo(from, to) {
+    let counter = setInterval(() => {
+        from+=5;
+        document.querySelector(`.card.two .number`).innerHTML = from;
+
+
+        if(from>=to) {
+            clearInterval(counter);
+            document.querySelector('.card.two .number').innerHTML = to;
+        }
+    },10)
+}
+
+function countUpThree(from, to) {
+    let counter = setInterval(() => {
+        from+=5;
+        document.querySelector(`.card.three .number`).innerHTML = from+ " km";
+
+
+        if(from>=to) {
+            clearInterval(counter);
+            document.querySelector('.card.three .number').innerHTML = to + " km";
+        }
+    },10)
+}
+
 loginform.addEventListener('submit', handleLogin);
 
 form.addEventListener('submit', handleSubmit);
 
-console.log(data.data);
+countUpOne(40000,40652);
+
+countUpTwo(3000,3560);
+
+countUpThree(650,1206);
+
+
+
+
+
 
 
 
