@@ -114,12 +114,12 @@ function countUpTwo(from, to) {
 function countUpThree(from, to) {
     let counter = setInterval(() => {
         from+=5;
-        document.querySelector(`.card.three .number`).innerHTML = from+ " km";
+        document.querySelector(`.card.three .number`).innerHTML = from+ " sq km";
 
 
         if(from>=to) {
             clearInterval(counter);
-            document.querySelector('.card.three .number').innerHTML = to + " km";
+            document.querySelector('.card.three .number').innerHTML = to + " sq km";
         }
     },10)
 }
@@ -132,7 +132,7 @@ countUpOne(39200,40652);
 
 countUpTwo(900,3560);
 
-countUpThree(0,1206);
+countUpThree(11000,12060);
 
 
 
