@@ -73,10 +73,11 @@ function handleSubmit(e) {
     data.data.forEach(info => {
         if(info.place === place.value) {
             document.querySelector('.content').style.display = 'block';
+
             document.querySelector('.place').innerHTML = `Place: ${info.place}`;
             document.querySelector('.totaltrees').innerHTML = `Total Number of Trees: ${info.totalTrees}`;
             document.querySelector('.treescutpermission').innerHTML = `Number of trees cut with permission: ${noOfTrees.value}`;
-            document.querySelector('.treescutwithoutpermission').innerHTML = `Number of trees cut without permission: ${info.treesCut-noOfTrees.value}`;
+            document.querySelector('.treescutwithoutpermission').innerHTML = `Number of trees cut without permission: ${info.treesCut-noOfTrees.value<0?0:info.treesCut-noOfTrees.value}`;
         }
     })
 }

@@ -1,13 +1,18 @@
 body {
     margin: 0;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
 }
 
 header {
-    background-color: rgb(12, 52, 97);
-    color: white;
+    
     padding: 40px;
     text-align: center;
     font-size: 40px;
+    font-family:monospace;
 }
 
 .overlay {
@@ -15,17 +20,18 @@ header {
     min-height: 70vh;
     display: flex;
     justify-content: center;
-    background-color: white;
+    
     
 }
 .logincontainer {
+    background-color: rgba(128, 128, 128, 0.356);
     position: absolute;
     top: 30%;
     width: fit-content;
     height: fit-content;
     padding: 40px 15px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px gray;
+    box-shadow: 2px 2px 10px rgb(15, 15, 15);
 }
 
 #loginform {
@@ -53,7 +59,10 @@ button:hover {
 
 input {
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.301);
+    padding: 0px 5px;
+    color: white;
 }
 
 .error {
@@ -98,14 +107,27 @@ input {
 
 svg {
     width: 30px;
+    filter: invert();
 }
 
 .content {
     display: none;
+
 }
 
 .content > div {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+select {
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.301);
+    color: white
+}
+
+option {
+    color:black;
 }
