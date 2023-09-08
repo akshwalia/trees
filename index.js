@@ -100,7 +100,7 @@ function countUpOne(from, to) {
 
 function countUpTwo(from, to) {
     let counter = setInterval(() => {
-        from+=5;
+        from+=15;
         document.querySelector(`.card.two .number`).innerHTML = from;
 
 
@@ -128,11 +128,11 @@ loginform.addEventListener('submit', handleLogin);
 
 form.addEventListener('submit', handleSubmit);
 
-countUpOne(40000,40652);
+countUpOne(39200,40652);
 
-countUpTwo(3000,3560);
+countUpTwo(900,3560);
 
-countUpThree(650,1206);
+countUpThree(0,1206);
 
 
 
