@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" async></script>
+</head>
+
+<body>
+    <header>
+        SafeScape
+    </header>
+    <div class="overlay">
+        <div></div>
+        <div class="logincontainer">
+            <form id="loginform" novalidate>
+                <div class="username">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username">
+                </div>
+
+                <div class="password">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <button id="loginbutton">Login</button>
+            </form>
+            <div class="error">Invalid Credentials</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="formcontainer">
+            <form id="form">
+                <div class="trees">
+                    <label for="noOfTrees">Number of trees to be cut:</label>
+                    <input type="number" name="noOfTrees" id="noOfTrees">
+                </div>
+
+
+                <div class="typeoftree">
+                    <label for="type">Type of Tree:</label>
+                    <select name="type" id="type">
+                        <option value="" selected disabled hidden>Choose here</option>
+                        <option value="wild jack"><i>Artocarpus Hirstus</i> (Wild Jack)</option>
+                        <option value="tamanu">Alophyllum Inophyllum (Tamanu)</option>
+                        <option value="Malabar kino">Pterocarpus Marsupium (Malabar Kino)</option>
+                        <option value="azardirachta">Azardirachta India</option>
+                        <option value="calotropis">Calotropis Procera</option>
+                    </select>
+                </div>
+
+                <div class="places">
+                    <label for="location">Location:</label>
+                    <select name="location" id="location">
+                        <option value="" selected disabled hidden>Choose here</option>
+                        <option value="Ooty">Ooty</option>
+                        <option value="Nilambur">Nilambur</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Palakkad">Palakkad</option>
+                        <option value="Pollachi">Pollachi</option>
+                        <option value="Munnar">Munnar</option>
+                    </select>
+                </div>
+
+                <button id="submit">Submit</button>
+            </form>
+
+            <div class="content">
+                <hr>
+                <div>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>map-marker</title>
+                            <path
+                                d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                        </svg></span>
+                    <div class="place"></div>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>forest-outline</title>
+                        <path
+                            d="M19.19 18H24L20.14 12H22L15 2L12.61 5.41L17.92 13H15.97L19.19 18M16 12L9 2L2 12H3.86L0 18H7V22H11V18H18L14.14 12H16M12.16 10H10.5L14.34 16H3.67L7.53 10H5.84L9 5.5L12.16 10M13 19V22H17V19H13Z" />
+                    </svg>
+                    <div class="totaltrees"></div>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>file-document-check-outline</title>
+                        <path
+                            d="M23.5 17L18.5 22L15 18.5L16.5 17L18.5 19L22 15.5L23.5 17M6 2C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H13.81C13.45 21.38 13.2 20.7 13.08 20H6V4H13V9H18V13.08C18.33 13.03 18.67 13 19 13C19.34 13 19.67 13.03 20 13.08V8L14 2M8 12V14H16V12M8 16V18H13V16Z" />
+                    </svg>
+                    <div class="treescutpermission"></div>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>file-document-remove-outline</title>
+                        <path
+                            d="M22.54 21.12L20.41 19L22.54 16.88L21.12 15.46L19 17.59L16.88 15.46L15.46 16.88L17.59 19L15.46 21.12L16.88 22.54L19 20.41L21.12 22.54M6 2C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H13.81C13.45 21.38 13.2 20.7 13.08 20H6V4H13V9H18V13.08C18.33 13.03 18.67 13 19 13C19.34 13 19.67 13.03 20 13.08V8L14 2M8 12V14H16V12M8 16V18H13V16Z" />
+                    </svg>
+                    <div class="treescutwithoutpermission"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
